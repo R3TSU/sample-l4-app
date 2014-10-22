@@ -4,8 +4,8 @@
     "barryvdh/laravel-ide-helper": "1.*"
 	},
     "require-dev": {
-    	"codeception/codeception": "~2.0"
-        
+    	"codeception/codeception": "~2.0",
+        "league/factory-muffin": "~2.0"
     },
   	"autoload": {
 		"classmap": [
