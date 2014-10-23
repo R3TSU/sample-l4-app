@@ -17,7 +17,7 @@
 
         <tbody>
             @foreach ($posts as $post)
-                <tr>
+                <tr class="post">
                     <td>{{ $post->title }}</td>
 					<td>{{ $post->body }}</td>
                     <td>{{ link_to_route('posts.edit', 'Edit', array($post->id), array('class' => 'btn btn-info')) }}</td>

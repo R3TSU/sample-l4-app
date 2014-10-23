@@ -21,7 +21,7 @@ class PostsController extends BaseController {
      */
     public function index()
     {
-        $posts = $this->post->all();
+        $posts = $this->post->all()->take(20);
 
         return View::make('posts.index', compact('posts'));
     }
