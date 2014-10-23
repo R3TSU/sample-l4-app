@@ -35,7 +35,12 @@ class FactoryHelper extends \Codeception\Module
         $this->factory->seed($num, 'Post');
     }
 
-    public function _after()
+    public function produce($model, $attributes = array())
+    {
+        return $this->factory->create($model, $attributes);
+    }
+
+    public function _after(\Codeception\TestCase $test)
     {
         $this->factory->deleteSaved();
     }
